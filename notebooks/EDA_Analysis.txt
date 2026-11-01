@@ -1,0 +1,148 @@
+# Olist E-commerce – Exploratory Data Analysis (EDA)
+
+## 1. Project Overview
+
+This project analyzes the Olist e-commerce dataset to understand sales, customers, orders, sellers, payments, delivery performance and customer reviews.
+
+The analysis uses SQL Server to retrieve data and Python libraries such as Pandas, Matplotlib and Seaborn to analyze and visualize the results.
+
+### Objectives
+
+- Understand order and sales performance.
+- Identify customer purchasing patterns.
+- Analyze delivery performance and shipping costs.
+- Evaluate seller and product-category performance.
+- Understand customer satisfaction.
+- Identify areas where the business can improve.
+
+## 2. Analysis Performed
+
+### 2.1 Univariate Analysis
+
+Univariate analysis examines one variable at a time.
+
+The notebook analyzes:
+
+- Order status distribution
+- Year-wise and monthly order counts
+- Customer distribution by state and city
+- One-time and repeat customers
+- Year-wise sales
+- Sales by product category and state
+- Freight value distribution
+- Delivery delay distribution
+- Orders per seller
+- Seller distribution by state
+- Payment methods and installments
+- Customer review ratings
+
+**Major findings**
+
+- Most orders in the dataset are delivered (96,478 orders).
+- SP has the highest customer count and sales value.
+- Most customers are one-time customers (96.88%).
+- Credit card is the most commonly used payment method (75.24%).
+- Five-star reviews account for 57.78% of reviews.
+
+### 2.2 Bivariate Analysis
+
+Bivariate analysis studies the relationship between two variables.
+
+The notebook analyzes:
+
+- Delivery delay vs review score
+- Delivery status vs review score
+- Product price vs freight value
+- Seller order count vs seller revenue
+- Product category vs review score
+- Review count vs average review score
+- Customer order count vs customer spending
+- Repeat customer type vs average spending
+
+**Major findings**
+
+**Delivery delay vs review score**
+
+- Observation: Five-star reviews have an average delivery delay of -13.39 days, while one-star reviews have an average of -4.06 days.
+- Interpretation: Higher review scores are associated with deliveries arriving earlier compared with the estimated delivery date.
+- Business Impact: Improving delivery reliability and delivery-date estimates may help improve customer satisfaction.
+
+**Repeat customers vs average spending**
+
+- Observation: Repeat customers have average spending of 310.49, compared with 161.49 for one-time customers.
+- Interpretation: Repeat customers spend more on average in this analysis.
+- Business Impact: Customer retention activities may help increase customer value and encourage additional purchases.
+
+**Seller order count vs revenue**
+
+- Observation: Sellers with different order counts can generate similar revenue.
+- Interpretation: Revenue depends on factors such as product value and product mix, not only order volume.
+- Business Impact: Seller performance should be evaluated using both order count and revenue.
+
+### 2.3 Multivariate Analysis
+
+Multivariate analysis examines multiple variables together.
+
+The notebook analyzes:
+
+- Delivery status, review score and delivery days
+- Average delivery delay and customer satisfaction
+- Seller state and customer state
+- Average freight value and delivery days by route
+- Correlation between review score and delivery measures
+
+**Major findings**
+
+- Observation: Delivery duration and delivery delay vary across review-score groups.
+- Interpretation: Delivery experience is one useful factor to investigate when understanding customer satisfaction.
+- Business Impact: Monitor delivery time, delivery status and review score together to identify service issues.
+
+- Observation: Freight cost and delivery duration vary across seller-to-customer state routes.
+- Interpretation: Shipping performance differs depending on the route.
+- Business Impact: Identify routes with high freight costs or long delivery times and investigate possible logistics improvements.
+
+### 2.4 Trend Analysis
+
+Trend analysis studies how business performance changes over time.
+
+The notebook analyzes monthly:
+
+- Delivered order count
+- Total sales
+- Average order value
+- Average delivery delay
+- Average review score
+
+**Major finding**
+
+- Observation: Monthly order count and sales change over the period, with higher activity in several months of 2017 and 2018.
+- Interpretation: Monthly trends help identify changes in demand and business performance.
+- Business Impact: Use monthly sales and order trends for demand planning, inventory planning and operational capacity decisions.
+
+## 3. Overall Business Findings
+
+1. **Sales:** Sales increased from approximately 6.16 million in 2017 to 7.39 million in 2018.
+2. **Customers:** The customer base contains a high percentage of one-time customers.
+3. **Retention:** Repeat customers have higher average spending than one-time customers.
+4. **Delivery:** Approximately 91.89% of classified delivered orders were delivered early, while 8.11% were delivered late.
+5. **Customer satisfaction:** More than half of the reviews are five-star ratings.
+6. **Payments:** Credit cards are the most frequently used payment method.
+7. **Geography:** São Paulo is the leading state in customer count, seller count and sales.
+8. **Logistics:** Freight costs and delivery duration vary across geographic routes.
+
+## 4. Business Recommendations
+
+- Improve customer retention through loyalty programs and relevant product recommendations.
+- Investigate late deliveries and identify the reasons for delays.
+- Monitor low-rated products and categories to understand customer complaints.
+- Evaluate sellers using revenue, order count, delivery performance and review scores.
+- Review high-cost shipping routes and identify opportunities to reduce freight expenses.
+- Use monthly sales trends to support inventory and demand planning.
+
+## 5. Conclusion
+
+The analysis provides an overview of Olist's sales, customer behavior, seller performance, delivery operations and customer satisfaction.
+
+The key opportunities identified are improving customer retention, monitoring late deliveries, understanding low customer ratings and optimizing shipping routes.
+
+By monitoring these business areas together, the company can make better decisions about sales growth, customer experience and logistics performance.
