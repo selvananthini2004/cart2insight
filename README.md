@@ -34,7 +34,7 @@ Additional interface features include:
 The application imports supporting modules. Keep these files available alongside `app.py`:
 
 ```text
-Cart2Insights/
+streamlit/
 │
 ├── app.py
 ├── database.py
