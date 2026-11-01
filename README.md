@@ -29,11 +29,19 @@ Additional interface features include:
 - **Pandas** – tabular query results and data transformations
 - **Chart utilities** – chart rendering is handled by the project's `utils.py` module
 
+## data
+Raw data  - [Click here to download data](https://drive.google.com/drive/folders/15T53qM0tcIsSs3REAcrDqdHzQ5wif6lc)
+
 ## Project Structure
 
 The application imports supporting modules. Keep these files available alongside `app.py`:
 
 ```text
+data/
+|
+├──raw
+├──cleaned
+
 streamlit/
 │
 ├── app.py
@@ -72,3 +80,6 @@ streamlit run app.py
 ```
 
 Streamlit will display a local URL in the terminal (usually `http://localhost:8501`). Open that URL in your browser.
+
+## Note
+Download the raw dataset and organize it into the appropriate folder structure.
